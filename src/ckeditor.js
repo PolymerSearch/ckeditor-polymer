@@ -6,6 +6,7 @@ import ClassicEditor from '@ckeditor/ckeditor5-editor-classic/src/classiceditor.
 import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment.js';
 import Autoformat from '@ckeditor/ckeditor5-autoformat/src/autoformat.js';
 import Autolink from '@ckeditor/ckeditor5-link/src/autolink.js';
+import Base64UploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/base64uploadadapter.js';
 import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote.js';
 import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold.js';
 import Code from '@ckeditor/ckeditor5-basic-styles/src/code.js';
@@ -13,6 +14,8 @@ import CodeBlock from '@ckeditor/ckeditor5-code-block/src/codeblock.js';
 import Essentials from '@ckeditor/ckeditor5-essentials/src/essentials.js';
 import FontBackgroundColor from '@ckeditor/ckeditor5-font/src/fontbackgroundcolor.js';
 import FontColor from '@ckeditor/ckeditor5-font/src/fontcolor.js';
+import FontFamily from '@ckeditor/ckeditor5-font/src/fontfamily.js';
+import FontSize from '@ckeditor/ckeditor5-font/src/fontsize.js';
 import Heading from '@ckeditor/ckeditor5-heading/src/heading.js';
 import HorizontalLine from '@ckeditor/ckeditor5-horizontal-line/src/horizontalline.js';
 import HtmlEmbed from '@ckeditor/ckeditor5-html-embed/src/htmlembed.js';
@@ -31,17 +34,19 @@ import LinkImage from '@ckeditor/ckeditor5-link/src/linkimage.js';
 import List from '@ckeditor/ckeditor5-list/src/list.js';
 import ListStyle from '@ckeditor/ckeditor5-list/src/liststyle.js';
 import MediaEmbed from '@ckeditor/ckeditor5-media-embed/src/mediaembed.js';
+import MediaEmbedToolbar from '@ckeditor/ckeditor5-media-embed/src/mediaembedtoolbar.js';
 import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph.js';
-import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice';
+import RemoveFormat from '@ckeditor/ckeditor5-remove-format/src/removeformat.js';
 import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough.js';
 import Subscript from '@ckeditor/ckeditor5-basic-styles/src/subscript.js';
 import Superscript from '@ckeditor/ckeditor5-basic-styles/src/superscript.js';
 import Table from '@ckeditor/ckeditor5-table/src/table.js';
+import TableCellProperties from '@ckeditor/ckeditor5-table/src/tablecellproperties';
+import TableProperties from '@ckeditor/ckeditor5-table/src/tableproperties';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar.js';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation.js';
 import TodoList from '@ckeditor/ckeditor5-list/src/todolist';
 import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline.js';
-import Base64UploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/base64uploadadapter'
 
 class Editor extends ClassicEditor {}
 
@@ -50,6 +55,7 @@ Editor.builtinPlugins = [
 	Alignment,
 	Autoformat,
 	Autolink,
+	Base64UploadAdapter,
 	BlockQuote,
 	Bold,
 	Code,
@@ -57,6 +63,8 @@ Editor.builtinPlugins = [
 	Essentials,
 	FontBackgroundColor,
 	FontColor,
+	FontFamily,
+	FontSize,
 	Heading,
 	HorizontalLine,
 	HtmlEmbed,
@@ -75,17 +83,19 @@ Editor.builtinPlugins = [
 	List,
 	ListStyle,
 	MediaEmbed,
+	MediaEmbedToolbar,
 	Paragraph,
-	PasteFromOffice,
+	RemoveFormat,
 	Strikethrough,
 	Subscript,
 	Superscript,
 	Table,
+	TableCellProperties,
+	TableProperties,
 	TableToolbar,
 	TextTransformation,
 	TodoList,
-	Underline,
-    Base64UploadAdapter
+	Underline
 ];
 
 export default Editor;
