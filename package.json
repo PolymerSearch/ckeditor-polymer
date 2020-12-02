@@ -2,7 +2,7 @@
   "name": "ckeditor5-custom-build",
   "author": "CKSource",
   "description": "A custom CKEditor 5 build made by the CKEditor 5 online builder.",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "license": "SEE LICENSE IN LICENSE.md",
   "private": true,
   "devDependencies": {
@@ -42,7 +42,5 @@
   "scripts": {
     "build": "webpack --mode production"
   },
-  "dependencies": {
-    "@ckeditor/ckeditor5-ckfinder": "^23.1.0"
-  }
+  "dependencies": {}
 }
