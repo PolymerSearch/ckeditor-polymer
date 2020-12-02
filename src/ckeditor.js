@@ -52,8 +52,6 @@ Editor.builtinPlugins = [
 	Autolink,
 	BlockQuote,
 	Bold,
-	CKFinder,
-	CKFinderUploadAdapter,
 	Code,
 	CodeBlock,
 	Essentials,
