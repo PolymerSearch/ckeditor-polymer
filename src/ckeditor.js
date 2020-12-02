@@ -8,8 +8,6 @@ import Autoformat from '@ckeditor/ckeditor5-autoformat/src/autoformat.js';
 import Autolink from '@ckeditor/ckeditor5-link/src/autolink.js';
 import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote.js';
 import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold.js';
-import CKFinder from '@ckeditor/ckeditor5-ckfinder/src/ckfinder.js';
-import CKFinderUploadAdapter from '@ckeditor/ckeditor5-adapter-ckfinder/src/uploadadapter.js';
 import Code from '@ckeditor/ckeditor5-basic-styles/src/code.js';
 import CodeBlock from '@ckeditor/ckeditor5-code-block/src/codeblock.js';
 import Essentials from '@ckeditor/ckeditor5-essentials/src/essentials.js';
@@ -43,6 +41,7 @@ import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar.js';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation.js';
 import TodoList from '@ckeditor/ckeditor5-list/src/todolist';
 import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline.js';
+import Base64UploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/base64uploadadapter'
 
 class Editor extends ClassicEditor {}
 
@@ -87,7 +86,8 @@ Editor.builtinPlugins = [
 	TableToolbar,
 	TextTransformation,
 	TodoList,
-	Underline
+	Underline,
+    Base64UploadAdapter
 ];
 
 export default Editor;
