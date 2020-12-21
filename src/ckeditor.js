@@ -47,6 +47,7 @@ import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar.js';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation.js';
 import TodoList from '@ckeditor/ckeditor5-list/src/todolist';
 import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline.js';
+import AutoImage from '@ckeditor/ckeditor5-image/src/autoimage';
 
 class Editor extends ClassicEditor {}
 
@@ -95,7 +96,8 @@ Editor.builtinPlugins = [
 	TableToolbar,
 	TextTransformation,
 	TodoList,
-	Underline
+	Underline,
+	AutoImage
 ];
 
 export default Editor;
